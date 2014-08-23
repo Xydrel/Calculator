@@ -46,3 +46,11 @@ Icon
 *.exe
 *.ilk
 *\Calculator-v1.tlog
+
+*.exe
+*.exe
+*.pdb
+*.idb
+*.tlog
+*.log
+*.sdf
