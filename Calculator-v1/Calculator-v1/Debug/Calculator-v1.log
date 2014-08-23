@@ -1,0 +1,13 @@
+﻿Build started 8/23/2014 9:11:09 AM.
+     1>Project "F:\DevFolder\Calculator\Calculator-v1\Calculator-v1\Calculator-v1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 2013 Ult\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Interface.cpp
+         Interface.cpp
+     1>f:\devfolder\calculator\calculator-v1\calculator-v1\interface.h(29): error C3867: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::max_size': function call missing argument list; use '&std::basic_string<char,std::char_traits<char>,std::allocator<char>>::max_size' to create a pointer to member
+     1>f:\devfolder\calculator\calculator-v1\calculator-v1\interface.h(29): error C2296: '+' : illegal, left operand has type 'unsigned int (__thiscall std::basic_string<char,std::char_traits<char>,std::allocator<char>>::* )(void) throw() const'
+     1>f:\devfolder\calculator\calculator-v1\calculator-v1\interface.h(29): fatal error C1903: unable to recover from previous error(s); stopping compilation
+     1>Done Building Project "F:\DevFolder\Calculator\Calculator-v1\Calculator-v1\Calculator-v1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.30
