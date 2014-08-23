@@ -43,3 +43,6 @@ Icon
 *.obj
 *.idb
 *.log
+*.exe
+*.ilk
+*\Calculator-v1.tlog
