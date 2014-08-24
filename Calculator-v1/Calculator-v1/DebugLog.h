@@ -5,7 +5,7 @@ class DebugLog
 {
 
 public:
-	DebugLog();
+	DebugLog() {};
 	void D_Log(const char* msg);
 
 private:
