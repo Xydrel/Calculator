@@ -1,43 +1,60 @@
 // =========================================================
-// Application includes
-#include "Addition.h"
-#include "Subtraction.h"
-#include "Multiplication.h"
-#include "Division.h"
+// Object file includes
 #include "OrderOfOperation.h"
 #include "DebugLog.h"
 
-// =========================================================
-// STL includes
-#include <vector>
-
-using namespace std;
 
 static DebugLog logger = DebugLog();
 
 class UserInput
 {
+
+// Member Functions
 public:
-	UserInput(string input) { m_sUserInput = input; }
-	//~userInput();
+
+	/*
+	* Instantiate the object as well as start the method to 
+	* perform the conversion from string to a character array.
+	*/
+	UserInput(string input) { 
+		m_sUserInput = input;
+		m_cArray = StringBreakdown(m_sUserInput);
+	}
+
+	~UserInput() {};
+
 
 protected:
-	vector<char> StringBreakdown(string m_sUserInput)
-	{
-		vector<char> chars;
-		int i = 0;
-		while (i < m_sUserInput.max_size + 1)
-		{
-			chars.push_back(m_sUserInput[i]);
-			/*const char* msg = "Printing single char: " + m_sUserInput[i];
-			logger.D_Log(msg);*/
-		}
-	}
+	vector<char> StringBreakdown(string m_sUserInput);
+	double PerformArithmeticOperations(vector<char> m_cArary);
+
+
+// Member properties
+public:
+
+	char m_CharArray;
 
 private:
 
-	string m_sUserInput;
+	string			m_sUserInput;
+	vector<char>	m_cArray;
 
 };
+
+vector<char> UserInput::StringBreakdown(string m_sUserInput)
+{
+	vector<char> charVect(m_sUserInput.begin(), m_sUserInput.end());
+	for (unsigned int i = 0; i < charVect.capacity(); ++i)
+	{
+		cout << charVect[i] << endl;
+	}	
+	return charVect;
+}
+
+double UserInput::PerformArithmeticOperations(vector<char> m_cArray)
+{
+	return 1.0;
+}
+
 
 
