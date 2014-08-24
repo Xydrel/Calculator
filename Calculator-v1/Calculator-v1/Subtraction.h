@@ -2,18 +2,18 @@
 
 class Subtraction
 {
-public:
-	Subtraction(double x, double y) { m_x = x, m_y = y; }
 
-protected:
-	double performSubtraction(double m_x, double m_y);
+public:
+	Subtraction(void) {};
+
+	double performSubtraction(double x, double y);
 
 private:
 	double m_x;
 	double m_y;
 };
 
-double Subtraction::performSubtraction(double m_x, double m_y)
+double Subtraction::performSubtraction(double x, double y)
 {
-	return (m_x - m_y);
+	return (x - y);
 }
