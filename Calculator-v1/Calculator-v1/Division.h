@@ -3,7 +3,7 @@
 class Division
 {
 public :
-	Division(void);
+	Division(void) {};
 
 	double performDivision(double x, double y);
 
