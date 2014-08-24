@@ -3,7 +3,7 @@
 class Multiplication
 {
 public:
-	Multiplication(void);
+	Multiplication(void) {};
 
 	double performMultiplication(double x, double y);
 
