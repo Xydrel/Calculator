@@ -3,7 +3,7 @@
 class Addition
 {
 public:
-	Addition() {};
+	Addition(void) {};
 
 	double performAddition(double x, double y);
 
