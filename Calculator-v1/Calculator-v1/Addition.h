@@ -3,17 +3,16 @@
 class Addition
 {
 public:
-	Addition(double x, double y) { m_x = x, m_y = y; }
+	Addition() {};
 
-protected:
-	double performAddition(double m_x, double m_y);
+	double performAddition(double x, double y);
 
 private:
 	double m_x;
 	double m_y;
 };
 
-double Addition::performAddition(double m_x, double m_y)
+double Addition::performAddition(double x, double y)
 {
-	return (m_x + m_y);
+	return (x + y);
 }
