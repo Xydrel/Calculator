@@ -3,17 +3,16 @@
 class Division
 {
 public :
-	Division(double x, double y) { m_x = x, m_y = y; }
+	Division(void);
 
-protected:
-	double performDivision(double m_x, double m_y);
+	double performDivision(double x, double y);
 
 private:
 	double m_x;
 	double m_y;
 }; 
 
-double Division::performDivision(double m_x, double m_y)
+double Division::performDivision(double x, double y)
 {
-	return (m_x / m_y);
+	return (x / y);
 }
