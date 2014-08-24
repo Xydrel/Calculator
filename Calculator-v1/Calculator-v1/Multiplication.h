@@ -3,17 +3,16 @@
 class Multiplication
 {
 public:
-	Multiplication(double x, double y) { m_x = x, m_y = y; }
+	Multiplication(void);
 
-protected:
-	double performMultiplication(double m_x, double m_y);
+	double performMultiplication(double x, double y);
 
 private:
 	double m_x;
 	double m_y;
 };
 
-double Multiplication::performMultiplication(double m_x, double m_y)
+double Multiplication::performMultiplication(double x, double y)
 {
-	return (m_x * m_y);
+	return (x * y);
 }
